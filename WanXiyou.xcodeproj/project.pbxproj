@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44D09A7ED32AE235D1E1C10F /* libPods-WanXiyou.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B781408D7AC0013D69E85B57 /* libPods-WanXiyou.a */; };
+		74058FBB1F3009B300C8EE34 /* WXYHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FBA1F3009B300C8EE34 /* WXYHeaderView.m */; };
+		74058FBE1F301C2400C8EE34 /* UILabel+WXYLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FBD1F301C2400C8EE34 /* UILabel+WXYLabel.m */; };
+		74058FC11F3061CE00C8EE34 /* WXYSheduleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FC01F3061CE00C8EE34 /* WXYSheduleController.m */; };
+		74058FC41F3061F900C8EE34 /* WXYScoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FC31F3061F900C8EE34 /* WXYScoreController.m */; };
+		74058FC71F30624B00C8EE34 /* WXYStatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FC61F30624B00C8EE34 /* WXYStatsController.m */; };
+		74058FD81F30786300C8EE34 /* LDSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FD51F30786300C8EE34 /* LDSegmentView.m */; };
+		74058FD91F30786300C8EE34 /* LDSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FD71F30786300C8EE34 /* LDSegmentViewController.m */; };
+		74058FDC1F307A9700C8EE34 /* WXYPlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FDB1F307A9700C8EE34 /* WXYPlanController.m */; };
+		74F31F281F3173FA00C31244 /* WXYWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F31F271F3173FA00C31244 /* WXYWeekView.m */; };
+		74F5B9611F2EB2E4002842F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9601F2EB2E4002842F9 /* main.m */; };
+		74F5B96C1F2EB2E4002842F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */; };
+		74F5B96F1F2EB2E4002842F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F5B96D1F2EB2E4002842F9 /* LaunchScreen.storyboard */; };
+		74F5B97A1F2EB2E4002842F9 /* WanXiyouTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9791F2EB2E4002842F9 /* WanXiyouTests.m */; };
+		74F5B9851F2EB2E4002842F9 /* WanXiyouUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9841F2EB2E4002842F9 /* WanXiyouUITests.m */; };
+		74F5B9AE1F2EEF92002842F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9AB1F2EEF92002842F9 /* AppDelegate.m */; };
+		74F5B9B31F2EF44B002842F9 /* WXYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9B21F2EF44B002842F9 /* WXYNavigationController.m */; };
+		74F5B9BA1F2F09EE002842F9 /* WXYLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9B91F2F09EE002842F9 /* WXYLeftMenuController.m */; };
+		74F5B9C01F2F117A002842F9 /* WXYEduController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9BF1F2F117A002842F9 /* WXYEduController.m */; };
+		74F5B9C31F2F1337002842F9 /* WXYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9C21F2F1337002842F9 /* WXYHomeController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74F5B9761F2EB2E4002842F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F5B9541F2EB2E4002842F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74F5B95B1F2EB2E4002842F9;
+			remoteInfo = WanXiyou;
+		};
+		74F5B9811F2EB2E4002842F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74F5B9541F2EB2E4002842F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74F5B95B1F2EB2E4002842F9;
+			remoteInfo = WanXiyou;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AE92EC7B041AB65C1F83B8F /* Pods-WanXiyou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanXiyou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WanXiyou/Pods-WanXiyou.debug.xcconfig"; sourceTree = "<group>"; };
+		74058FB91F3009B300C8EE34 /* WXYHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYHeaderView.h; sourceTree = "<group>"; };
+		74058FBA1F3009B300C8EE34 /* WXYHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYHeaderView.m; sourceTree = "<group>"; };
+		74058FBC1F301C2400C8EE34 /* UILabel+WXYLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WXYLabel.h"; sourceTree = "<group>"; };
+		74058FBD1F301C2400C8EE34 /* UILabel+WXYLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WXYLabel.m"; sourceTree = "<group>"; };
+		74058FBF1F3061CE00C8EE34 /* WXYSheduleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYSheduleController.h; sourceTree = "<group>"; };
+		74058FC01F3061CE00C8EE34 /* WXYSheduleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYSheduleController.m; sourceTree = "<group>"; };
+		74058FC21F3061F900C8EE34 /* WXYScoreController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreController.h; sourceTree = "<group>"; };
+		74058FC31F3061F900C8EE34 /* WXYScoreController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreController.m; sourceTree = "<group>"; };
+		74058FC51F30624B00C8EE34 /* WXYStatsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYStatsController.h; sourceTree = "<group>"; };
+		74058FC61F30624B00C8EE34 /* WXYStatsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYStatsController.m; sourceTree = "<group>"; };
+		74058FD41F30786300C8EE34 /* LDSegmentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentView.h; sourceTree = "<group>"; };
+		74058FD51F30786300C8EE34 /* LDSegmentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentView.m; sourceTree = "<group>"; };
+		74058FD61F30786300C8EE34 /* LDSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSegmentViewController.h; sourceTree = "<group>"; };
+		74058FD71F30786300C8EE34 /* LDSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentViewController.m; sourceTree = "<group>"; };
+		74058FDA1F307A9700C8EE34 /* WXYPlanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYPlanController.h; sourceTree = "<group>"; };
+		74058FDB1F307A9700C8EE34 /* WXYPlanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYPlanController.m; sourceTree = "<group>"; };
+		74F31F261F3173FA00C31244 /* WXYWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYWeekView.h; sourceTree = "<group>"; };
+		74F31F271F3173FA00C31244 /* WXYWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYWeekView.m; sourceTree = "<group>"; };
+		74F5B95C1F2EB2E4002842F9 /* WanXiyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanXiyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F5B9601F2EB2E4002842F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74F5B96E1F2EB2E4002842F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		74F5B9701F2EB2E4002842F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F5B9751F2EB2E4002842F9 /* WanXiyouTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanXiyouTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F5B9791F2EB2E4002842F9 /* WanXiyouTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WanXiyouTests.m; sourceTree = "<group>"; };
+		74F5B97B1F2EB2E4002842F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F5B9801F2EB2E4002842F9 /* WanXiyouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanXiyouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F5B9841F2EB2E4002842F9 /* WanXiyouUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WanXiyouUITests.m; sourceTree = "<group>"; };
+		74F5B9861F2EB2E4002842F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74F5B9AA1F2EEF92002842F9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		74F5B9AB1F2EEF92002842F9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		74F5B9B01F2EEFDA002842F9 /* WXYPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYPrefixHeader.pch; sourceTree = "<group>"; };
+		74F5B9B11F2EF44B002842F9 /* WXYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYNavigationController.h; sourceTree = "<group>"; };
+		74F5B9B21F2EF44B002842F9 /* WXYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNavigationController.m; sourceTree = "<group>"; };
+		74F5B9B81F2F09EE002842F9 /* WXYLeftMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLeftMenuController.h; sourceTree = "<group>"; };
+		74F5B9B91F2F09EE002842F9 /* WXYLeftMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLeftMenuController.m; sourceTree = "<group>"; };
+		74F5B9BE1F2F117A002842F9 /* WXYEduController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYEduController.h; sourceTree = "<group>"; };
+		74F5B9BF1F2F117A002842F9 /* WXYEduController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYEduController.m; sourceTree = "<group>"; };
+		74F5B9C11F2F1337002842F9 /* WXYHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXYHomeController.h; path = WanXiyou/WXYClasses/WXYMian/WXYHomeController.h; sourceTree = SOURCE_ROOT; };
+		74F5B9C21F2F1337002842F9 /* WXYHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXYHomeController.m; path = WanXiyou/WXYClasses/WXYMian/WXYHomeController.m; sourceTree = SOURCE_ROOT; };
+		B781408D7AC0013D69E85B57 /* libPods-WanXiyou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WanXiyou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3410B2C4375BC3DCDB3B8F4 /* Pods-WanXiyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanXiyou.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanXiyou/Pods-WanXiyou.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74F5B9591F2EB2E4002842F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44D09A7ED32AE235D1E1C10F /* libPods-WanXiyou.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B9721F2EB2E4002842F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B97D1F2EB2E4002842F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AA7BF6EC49DB8CB96AC24AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B781408D7AC0013D69E85B57 /* libPods-WanXiyou.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74058FD21F30786300C8EE34 /* LZSegmentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				74058FD31F30786300C8EE34 /* LDSegmentView */,
+				74058FD61F30786300C8EE34 /* LDSegmentViewController.h */,
+				74058FD71F30786300C8EE34 /* LDSegmentViewController.m */,
+			);
+			path = LZSegmentViewController;
+			sourceTree = "<group>";
+		};
+		74058FD31F30786300C8EE34 /* LDSegmentView */ = {
+			isa = PBXGroup;
+			children = (
+				74058FD41F30786300C8EE34 /* LDSegmentView.h */,
+				74058FD51F30786300C8EE34 /* LDSegmentView.m */,
+			);
+			path = LDSegmentView;
+			sourceTree = "<group>";
+		};
+		74F31F251F3173B800C31244 /* shedule */ = {
+			isa = PBXGroup;
+			children = (
+				74F31F261F3173FA00C31244 /* WXYWeekView.h */,
+				74F31F271F3173FA00C31244 /* WXYWeekView.m */,
+			);
+			path = shedule;
+			sourceTree = "<group>";
+		};
+		74F31F2B1F32103900C31244 /* Shedule */ = {
+			isa = PBXGroup;
+			children = (
+				74F31F251F3173B800C31244 /* shedule */,
+				74058FBF1F3061CE00C8EE34 /* WXYSheduleController.h */,
+				74058FC01F3061CE00C8EE34 /* WXYSheduleController.m */,
+			);
+			name = Shedule;
+			sourceTree = "<group>";
+		};
+		74F31F2C1F32105700C31244 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				74058FC21F3061F900C8EE34 /* WXYScoreController.h */,
+				74058FC31F3061F900C8EE34 /* WXYScoreController.m */,
+			);
+			name = Score;
+			sourceTree = "<group>";
+		};
+		74F31F2D1F32108200C31244 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				74058FC51F30624B00C8EE34 /* WXYStatsController.h */,
+				74058FC61F30624B00C8EE34 /* WXYStatsController.m */,
+			);
+			name = Stats;
+			sourceTree = "<group>";
+		};
+		74F31F2E1F3210B400C31244 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				74058FDA1F307A9700C8EE34 /* WXYPlanController.h */,
+				74058FDB1F307A9700C8EE34 /* WXYPlanController.m */,
+			);
+			name = Plan;
+			sourceTree = "<group>";
+		};
+		74F5B9531F2EB2E4002842F9 = {
+			isa = PBXGroup;
+			children = (
+				74F5B95E1F2EB2E4002842F9 /* WanXiyou */,
+				74F5B9781F2EB2E4002842F9 /* WanXiyouTests */,
+				74F5B9831F2EB2E4002842F9 /* WanXiyouUITests */,
+				74F5B95D1F2EB2E4002842F9 /* Products */,
+				B2C3B65642A08AC8180B646C /* Pods */,
+				1AA7BF6EC49DB8CB96AC24AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		74F5B95D1F2EB2E4002842F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B95C1F2EB2E4002842F9 /* WanXiyou.app */,
+				74F5B9751F2EB2E4002842F9 /* WanXiyouTests.xctest */,
+				74F5B9801F2EB2E4002842F9 /* WanXiyouUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74F5B95E1F2EB2E4002842F9 /* WanXiyou */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9921F2EB85E002842F9 /* WXYClasses */,
+				74F5B95F1F2EB2E4002842F9 /* Supporting Files */,
+			);
+			path = WanXiyou;
+			sourceTree = "<group>";
+		};
+		74F5B95F1F2EB2E4002842F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */,
+				74F5B9701F2EB2E4002842F9 /* Info.plist */,
+				74F5B96D1F2EB2E4002842F9 /* LaunchScreen.storyboard */,
+				74F5B9601F2EB2E4002842F9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		74F5B9781F2EB2E4002842F9 /* WanXiyouTests */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9791F2EB2E4002842F9 /* WanXiyouTests.m */,
+				74F5B97B1F2EB2E4002842F9 /* Info.plist */,
+			);
+			path = WanXiyouTests;
+			sourceTree = "<group>";
+		};
+		74F5B9831F2EB2E4002842F9 /* WanXiyouUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9841F2EB2E4002842F9 /* WanXiyouUITests.m */,
+				74F5B9861F2EB2E4002842F9 /* Info.plist */,
+			);
+			path = WanXiyouUITests;
+			sourceTree = "<group>";
+		};
+		74F5B9921F2EB85E002842F9 /* WXYClasses */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9931F2EB879002842F9 /* WXYItems */,
+				74F5B9951F2EB8C7002842F9 /* WXYTools */,
+				74F5B9A91F2EEF09002842F9 /* WXYMian */,
+				74F5B9941F2EB8A7002842F9 /* WXYCategory */,
+			);
+			path = WXYClasses;
+			sourceTree = "<group>";
+		};
+		74F5B9931F2EB879002842F9 /* WXYItems */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9961F2EBA18002842F9 /* WXYEduItem */,
+				74F5B9971F2EBA6A002842F9 /* WXYAttendanceItem */,
+				74F5B9981F2EBAA7002842F9 /* WXYLibraryItem */,
+				74F5B9991F2EBB1E002842F9 /* WXYRunItem */,
+				74F5B99A1F2EBB72002842F9 /* WXYSportItem */,
+				74F5B99C1F2EBBA7002842F9 /* WXYSettingsItem */,
+				74F5B99B1F2EBB8C002842F9 /* WXYLoginItem */,
+			);
+			path = WXYItems;
+			sourceTree = "<group>";
+		};
+		74F5B9941F2EB8A7002842F9 /* WXYCategory */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B99E1F2EBC04002842F9 /* UINSExtension */,
+				74F5B99D1F2EBBEC002842F9 /* NSExtension */,
+			);
+			path = WXYCategory;
+			sourceTree = "<group>";
+		};
+		74F5B9951F2EB8C7002842F9 /* WXYTools */ = {
+			isa = PBXGroup;
+			children = (
+				74058FD21F30786300C8EE34 /* LZSegmentViewController */,
+			);
+			path = WXYTools;
+			sourceTree = "<group>";
+		};
+		74F5B9961F2EBA18002842F9 /* WXYEduItem */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9BD1F2F1135002842F9 /* Models */,
+				74F5B9BC1F2F112D002842F9 /* Views */,
+				74F5B9BB1F2F1122002842F9 /* Presents */,
+			);
+			path = WXYEduItem;
+			sourceTree = "<group>";
+		};
+		74F5B9971F2EBA6A002842F9 /* WXYAttendanceItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYAttendanceItem;
+			sourceTree = "<group>";
+		};
+		74F5B9981F2EBAA7002842F9 /* WXYLibraryItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYLibraryItem;
+			sourceTree = "<group>";
+		};
+		74F5B9991F2EBB1E002842F9 /* WXYRunItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYRunItem;
+			sourceTree = "<group>";
+		};
+		74F5B99A1F2EBB72002842F9 /* WXYSportItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYSportItem;
+			sourceTree = "<group>";
+		};
+		74F5B99B1F2EBB8C002842F9 /* WXYLoginItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYLoginItem;
+			sourceTree = "<group>";
+		};
+		74F5B99C1F2EBBA7002842F9 /* WXYSettingsItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WXYSettingsItem;
+			sourceTree = "<group>";
+		};
+		74F5B99D1F2EBBEC002842F9 /* NSExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NSExtension;
+			sourceTree = "<group>";
+		};
+		74F5B99E1F2EBC04002842F9 /* UINSExtension */ = {
+			isa = PBXGroup;
+			children = (
+				74058FBC1F301C2400C8EE34 /* UILabel+WXYLabel.h */,
+				74058FBD1F301C2400C8EE34 /* UILabel+WXYLabel.m */,
+			);
+			path = UINSExtension;
+			sourceTree = "<group>";
+		};
+		74F5B9A91F2EEF09002842F9 /* WXYMian */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9B41F2F08C2002842F9 /* WXYLeftMeun */,
+				74F5B9C11F2F1337002842F9 /* WXYHomeController.h */,
+				74F5B9C21F2F1337002842F9 /* WXYHomeController.m */,
+				74F5B9AA1F2EEF92002842F9 /* AppDelegate.h */,
+				74F5B9AB1F2EEF92002842F9 /* AppDelegate.m */,
+				74F5B9B01F2EEFDA002842F9 /* WXYPrefixHeader.pch */,
+				74F5B9B11F2EF44B002842F9 /* WXYNavigationController.h */,
+				74F5B9B21F2EF44B002842F9 /* WXYNavigationController.m */,
+			);
+			path = WXYMian;
+			sourceTree = "<group>";
+		};
+		74F5B9B41F2F08C2002842F9 /* WXYLeftMeun */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9B71F2F09BB002842F9 /* Models */,
+				74F5B9B61F2F09B1002842F9 /* Views */,
+				74F5B9B51F2F0992002842F9 /* Presents */,
+			);
+			path = WXYLeftMeun;
+			sourceTree = "<group>";
+		};
+		74F5B9B51F2F0992002842F9 /* Presents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presents;
+			sourceTree = "<group>";
+		};
+		74F5B9B61F2F09B1002842F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74F5B9B81F2F09EE002842F9 /* WXYLeftMenuController.h */,
+				74F5B9B91F2F09EE002842F9 /* WXYLeftMenuController.m */,
+				74058FB91F3009B300C8EE34 /* WXYHeaderView.h */,
+				74058FBA1F3009B300C8EE34 /* WXYHeaderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		74F5B9B71F2F09BB002842F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		74F5B9BB1F2F1122002842F9 /* Presents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presents;
+			sourceTree = "<group>";
+		};
+		74F5B9BC1F2F112D002842F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74F31F2E1F3210B400C31244 /* Plan */,
+				74F31F2D1F32108200C31244 /* Stats */,
+				74F31F2C1F32105700C31244 /* Score */,
+				74F31F2B1F32103900C31244 /* Shedule */,
+				74F5B9BE1F2F117A002842F9 /* WXYEduController.h */,
+				74F5B9BF1F2F117A002842F9 /* WXYEduController.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		74F5B9BD1F2F1135002842F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B2C3B65642A08AC8180B646C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AE92EC7B041AB65C1F83B8F /* Pods-WanXiyou.debug.xcconfig */,
+				D3410B2C4375BC3DCDB3B8F4 /* Pods-WanXiyou.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74F5B95B1F2EB2E4002842F9 /* WanXiyou */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F5B9891F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyou" */;
+			buildPhases = (
+				6D691247B260919DA7C3FBBF /* [CP] Check Pods Manifest.lock */,
+				74F5B9581F2EB2E4002842F9 /* Sources */,
+				74F5B9591F2EB2E4002842F9 /* Frameworks */,
+				74F5B95A1F2EB2E4002842F9 /* Resources */,
+				4A9A82E9BF7F1DB88C8C71B6 /* [CP] Embed Pods Frameworks */,
+				3D4C30C3946330CF255623A1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WanXiyou;
+			productName = WanXiyou;
+			productReference = 74F5B95C1F2EB2E4002842F9 /* WanXiyou.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74F5B9741F2EB2E4002842F9 /* WanXiyouTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F5B98C1F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyouTests" */;
+			buildPhases = (
+				74F5B9711F2EB2E4002842F9 /* Sources */,
+				74F5B9721F2EB2E4002842F9 /* Frameworks */,
+				74F5B9731F2EB2E4002842F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F5B9771F2EB2E4002842F9 /* PBXTargetDependency */,
+			);
+			name = WanXiyouTests;
+			productName = WanXiyouTests;
+			productReference = 74F5B9751F2EB2E4002842F9 /* WanXiyouTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74F5B97F1F2EB2E4002842F9 /* WanXiyouUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74F5B98F1F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyouUITests" */;
+			buildPhases = (
+				74F5B97C1F2EB2E4002842F9 /* Sources */,
+				74F5B97D1F2EB2E4002842F9 /* Frameworks */,
+				74F5B97E1F2EB2E4002842F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74F5B9821F2EB2E4002842F9 /* PBXTargetDependency */,
+			);
+			name = WanXiyouUITests;
+			productName = WanXiyouUITests;
+			productReference = 74F5B9801F2EB2E4002842F9 /* WanXiyouUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74F5B9541F2EB2E4002842F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "PuChin·chen";
+				TargetAttributes = {
+					74F5B95B1F2EB2E4002842F9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					74F5B9741F2EB2E4002842F9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74F5B95B1F2EB2E4002842F9;
+					};
+					74F5B97F1F2EB2E4002842F9 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 74F5B95B1F2EB2E4002842F9;
+					};
+				};
+			};
+			buildConfigurationList = 74F5B9571F2EB2E4002842F9 /* Build configuration list for PBXProject "WanXiyou" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74F5B9531F2EB2E4002842F9;
+			productRefGroup = 74F5B95D1F2EB2E4002842F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74F5B95B1F2EB2E4002842F9 /* WanXiyou */,
+				74F5B9741F2EB2E4002842F9 /* WanXiyouTests */,
+				74F5B97F1F2EB2E4002842F9 /* WanXiyouUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74F5B95A1F2EB2E4002842F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F5B96F1F2EB2E4002842F9 /* LaunchScreen.storyboard in Resources */,
+				74F5B96C1F2EB2E4002842F9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B9731F2EB2E4002842F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B97E1F2EB2E4002842F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D4C30C3946330CF255623A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanXiyou/Pods-WanXiyou-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9A82E9BF7F1DB88C8C71B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WanXiyou/Pods-WanXiyou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D691247B260919DA7C3FBBF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74F5B9581F2EB2E4002842F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F5B9AE1F2EEF92002842F9 /* AppDelegate.m in Sources */,
+				74058FDC1F307A9700C8EE34 /* WXYPlanController.m in Sources */,
+				74F5B9B31F2EF44B002842F9 /* WXYNavigationController.m in Sources */,
+				74F31F281F3173FA00C31244 /* WXYWeekView.m in Sources */,
+				74F5B9BA1F2F09EE002842F9 /* WXYLeftMenuController.m in Sources */,
+				74F5B9C01F2F117A002842F9 /* WXYEduController.m in Sources */,
+				74058FBB1F3009B300C8EE34 /* WXYHeaderView.m in Sources */,
+				74058FD91F30786300C8EE34 /* LDSegmentViewController.m in Sources */,
+				74F5B9611F2EB2E4002842F9 /* main.m in Sources */,
+				74058FC11F3061CE00C8EE34 /* WXYSheduleController.m in Sources */,
+				74058FD81F30786300C8EE34 /* LDSegmentView.m in Sources */,
+				74058FC41F3061F900C8EE34 /* WXYScoreController.m in Sources */,
+				74058FBE1F301C2400C8EE34 /* UILabel+WXYLabel.m in Sources */,
+				74F5B9C31F2F1337002842F9 /* WXYHomeController.m in Sources */,
+				74058FC71F30624B00C8EE34 /* WXYStatsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B9711F2EB2E4002842F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F5B97A1F2EB2E4002842F9 /* WanXiyouTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74F5B97C1F2EB2E4002842F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74F5B9851F2EB2E4002842F9 /* WanXiyouUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74F5B9771F2EB2E4002842F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74F5B95B1F2EB2E4002842F9 /* WanXiyou */;
+			targetProxy = 74F5B9761F2EB2E4002842F9 /* PBXContainerItemProxy */;
+		};
+		74F5B9821F2EB2E4002842F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74F5B95B1F2EB2E4002842F9 /* WanXiyou */;
+			targetProxy = 74F5B9811F2EB2E4002842F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		74F5B96D1F2EB2E4002842F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				74F5B96E1F2EB2E4002842F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		74F5B9871F2EB2E4002842F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		74F5B9881F2EB2E4002842F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74F5B98A1F2EB2E4002842F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE92EC7B041AB65C1F83B8F /* Pods-WanXiyou.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WanXiyou/WXYClasses/WXYMian/WXYPrefixHeader.pch;
+				INFOPLIST_FILE = WanXiyou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		74F5B98B1F2EB2E4002842F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3410B2C4375BC3DCDB3B8F4 /* Pods-WanXiyou.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WanXiyou/WXYClasses/WXYMian/WXYPrefixHeader.pch;
+				INFOPLIST_FILE = WanXiyou/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyou;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		74F5B98D1F2EB2E4002842F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WanXiyouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanXiyou.app/WanXiyou";
+			};
+			name = Debug;
+		};
+		74F5B98E1F2EB2E4002842F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WanXiyouTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyouTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanXiyou.app/WanXiyou";
+			};
+			name = Release;
+		};
+		74F5B9901F2EB2E4002842F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WanXiyouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WanXiyou;
+			};
+			name = Debug;
+		};
+		74F5B9911F2EB2E4002842F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WanXiyouUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PuChin.WanXiyouUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WanXiyou;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74F5B9571F2EB2E4002842F9 /* Build configuration list for PBXProject "WanXiyou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F5B9871F2EB2E4002842F9 /* Debug */,
+				74F5B9881F2EB2E4002842F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F5B9891F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyou" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F5B98A1F2EB2E4002842F9 /* Debug */,
+				74F5B98B1F2EB2E4002842F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F5B98C1F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyouTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F5B98D1F2EB2E4002842F9 /* Debug */,
+				74F5B98E1F2EB2E4002842F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74F5B98F1F2EB2E4002842F9 /* Build configuration list for PBXNativeTarget "WanXiyouUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74F5B9901F2EB2E4002842F9 /* Debug */,
+				74F5B9911F2EB2E4002842F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74F5B9541F2EB2E4002842F9 /* Project object */;
+}

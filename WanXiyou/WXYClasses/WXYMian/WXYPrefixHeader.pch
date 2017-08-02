@@ -1,0 +1,84 @@
+//
+//  WXYPrefixHeader.pch
+//  WanXiyou
+//
+//  Created by 满脸胡茬的怪蜀黍 on 2017/7/31.
+//  Copyright © 2017年 PuChin·chen. All rights reserved.
+//
+
+#ifndef WXYPrefixHeader_pch
+#define WXYPrefixHeader_pch
+/**
+ *  导入系统框架
+ */
+
+
+/**
+ *  导入第三方框架
+ */
+
+#import <AFNetworking.h>
+#import <Masonry.h>
+#import <DZNEmptyDataSet/UIScrollView+EmptyDataSet.h>
+#import <PKRevealController.h>
+#import <POP.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SVProgressHUD.h>
+
+// pod "AFNetworking"
+// pod "DZNEmptyDataSet"
+// pod "Masonry"
+// pod "PKRevealController"
+// pod "pop"
+// pod "SDWebImage"
+// pod "SCProgressHUD"
+
+/**
+ *  导入自定义类
+ */
+// 根控制器
+#import "WXYNavigationController.h"
+#import "WXYHomeController.h"
+
+// 左侧划栏
+#import "WXYLeftMenuController.h"
+#import "WXYHeaderView.h"
+
+// 教务信息
+#import "WXYEduController.h" // 教务信息
+#import "WXYSheduleController.h" //课表
+#import "WXYWeekView.h"
+
+#import "WXYScoreController.h" // 成绩
+#import "WXYStatsController.h" // 成绩统计
+#import "WXYPlanController.h"  // 培养计划
+
+
+
+/**
+ *  扩展类
+ */
+#import "UILabel+WXYLabel.h"
+
+/**
+ *  工具类
+ */
+#import "LDSegmentView.h"
+#import "LDSegmentViewController.h"
+
+
+/*
+ *宏定义
+ */
+
+// 常用距离值
+
+//屏幕的宽高值
+//屏幕宽
+#define kScreenWidht ([UIScreen mainScreen].bounds.size.width)
+//屏幕高
+#define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
+//像素粒
+#define kScreenRatio ([UIScreen mainScreen].bounds.size.width / kScreenWidht)
+
+#endif /* WXYPrefixHeader_pch */
