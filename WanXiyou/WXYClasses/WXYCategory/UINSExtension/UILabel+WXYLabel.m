@@ -17,7 +17,6 @@
     label.textColor = color;
     label.textAlignment = textAlignment;
     label.numberOfLines = 0;
-    
     return label;
 }
 

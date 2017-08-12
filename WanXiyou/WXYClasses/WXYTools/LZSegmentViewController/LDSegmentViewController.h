@@ -41,13 +41,12 @@
 @property (nonatomic, assign) CGFloat fontSize;
 
 /**
- 类方法实例化控制器
-
- @param viewController 需要添加到的控制器
- @param controllers 包含的子控制器
- @param titles 标题
- @param frame 视图frame
- @return 返回实例化的控制器
- */
+ * 类方法实例化控制器
+ * @param viewController 需要添加到的控制器
+ * @param controllers 包含的子控制器
+ * @param titles 标题
+ * @param frame 视图frame
+ * @return 返回实例化的控制器
+ **/
 + (LDSegmentViewController *)segmentOnViewController:(UIViewController *)viewController childControllers:(NSArray<UIViewController *> *)controllers setmentTitles:(NSArray<NSString *> *)titles ViewFrame:(CGRect)frame ;
 @end

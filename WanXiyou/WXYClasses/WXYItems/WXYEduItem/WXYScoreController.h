@@ -10,4 +10,7 @@
 
 @interface WXYScoreController : UIViewController
 
+@property(nonatomic, strong) NSArray *titleArray;
+@property(nonatomic, strong) NSArray<UIColor *> *colorArray;
+
 @end

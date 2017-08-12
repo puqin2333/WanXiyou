@@ -7,9 +7,10 @@
 //
 
 #import "WXYSheduleController.h"
-#import "WXYWeekView.h"
+
 @interface WXYSheduleController ()
 @property(nonatomic, strong) WXYWeekView *weekView;
+@property(nonatomic, strong) WXYEduPresenters *presenter;
 @end
 
 @implementation WXYSheduleController
@@ -19,7 +20,6 @@
     [super viewDidLoad];
     _weekView = [[WXYWeekView alloc] initWithFrame:CGRectMake(0, 50 * kScreenRatio, kScreenWidht, kScreenHeight - 50 * kScreenRatio)];
     [self.view addSubview:_weekView];
-
 }
 
 

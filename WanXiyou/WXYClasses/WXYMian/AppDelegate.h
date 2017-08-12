@@ -10,8 +10,8 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
-
+@property(strong, nonatomic) UIWindow *window;
+@property(strong, nonatomic) NSDictionary *paramDict; // 请求的参数字典
 
 @end
 

@@ -9,5 +9,5 @@ target 'WanXiyou’ do
      pod "pop"
      pod "SDWebImage"
      pod "SVProgressHUD"
-  
+     pod "YYModel"  
 end

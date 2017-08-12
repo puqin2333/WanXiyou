@@ -10,6 +10,5 @@
 
 @interface WXYStatsController : UIViewController
 
-@property (nonatomic, copy)NSString *titleStr;
 
 @end

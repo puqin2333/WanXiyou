@@ -11,7 +11,7 @@
 /**
  *  导入系统框架
  */
-
+#import "AppDelegate.h"
 
 /**
  *  导入第三方框架
@@ -24,6 +24,7 @@
 #import <POP.h>
 #import <SDWebImage/UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
+#import <YYModel.h>
 
 // pod "AFNetworking"
 // pod "DZNEmptyDataSet"
@@ -46,26 +47,46 @@
 
 // 教务信息
 #import "WXYEduController.h" // 教务信息
+#import "WXYEduPresenters.h"
+
 #import "WXYSheduleController.h" //课表
 #import "WXYWeekView.h"
+#import "WXYLessonCollectionViewCell.h"
+#import "WXYLessonCollectionReusableView.h"
+#import "WXYLessonModel.h"
 
 #import "WXYScoreController.h" // 成绩
+#import "WXYScoreView.h"
+#import "WXYScoreCell.h"
+#import "WXYScoreDetailView.h"
+
 #import "WXYStatsController.h" // 成绩统计
+#import "WXYScoreStatusView.h"
+#import "WXYScoreStatusCell.h"
+#import "WXYBezierCurveView.h"
+
 #import "WXYPlanController.h"  // 培养计划
 
+// 登陆
+#import "WXYLoginViewController.h"
+#import "WXYLoginModel.h"
+#import "WXYLoginPresenter.h"
+// 登陆
 
 
 /**
  *  扩展类
  */
 #import "UILabel+WXYLabel.h"
+#import "UIAlertController+show.h"
 
 /**
  *  工具类
  */
 #import "LDSegmentView.h"
 #import "LDSegmentViewController.h"
-
+#import "WXYTextField.h"
+#import "WXYNetWorking.h"  // 对 AFNetWorking 的二次封装
 
 /*
  *宏定义
@@ -79,6 +100,6 @@
 //屏幕高
 #define kScreenHeight ([UIScreen mainScreen].bounds.size.height)
 //像素粒
-#define kScreenRatio ([UIScreen mainScreen].bounds.size.width / kScreenWidht)
+#define kScreenRatio ([UIScreen mainScreen].bounds.size.width / 414)
 
 #endif /* WXYPrefixHeader_pch */

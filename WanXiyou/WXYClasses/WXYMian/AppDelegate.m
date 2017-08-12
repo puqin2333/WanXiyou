@@ -20,17 +20,26 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [_window setBackgroundColor:[UIColor whiteColor]];
     
+    //读取当前网络状态
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
     // 读取当前版本
-    BOOL isNewVersion = [self isNewVersion];
+//    BOOL isNewVersion = [self isNewVersion];
+//    
+//    isNewVersion ? [self enterLoginController] : [self enterDefaultController];
+    [self enterLoginController];
     
-    isNewVersion ? [self enterLoginController] : [self enterDefaultController];
+    [self.window makeKeyAndVisible];
     
-    [_window makeKeyAndVisible];
-    
-    // 监听 loginController 发出的通知
-//    [NSNotificationCenter defaultCenter] addObserverForName:<#(nullable NSNotificationName)#> object:<#(nullable id)#> queue:<#(nullable NSOperationQueue *)#> usingBlock:<#^(NSNotification * _Nonnull note)block#>;
+//  监听 loginController 发出的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeView:) name:@"changeToMainVC" object:nil];
     
     return YES;
+}
+
+- (void)dealloc{
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 // 判断当前是否为新版本
@@ -46,7 +55,8 @@
 }
 
 - (void)enterLoginController {
-    
+    WXYLoginViewController *loginViewController = [[WXYLoginViewController alloc] init];
+    self.window.rootViewController = loginViewController;
 }
 
 - (void)enterDefaultController {
@@ -62,6 +72,21 @@
     revealController.delegate = self;
     self.window.rootViewController = revealController;
     
+}
+
+- (void)changeView:(NSNotification *)notification {
+    NSDictionary *passValue = [notification userInfo];
+    NSLog(@"%@",passValue);
+    NSDictionary *data = passValue[@"data"];
+    self.paramDict = @{
+                       @"xh" : data[@"id"],
+                       @"name" : data[@"name"],
+                       @"cookie" : data[@"cookie"],
+                       @"device" : @"iOS"
+                       };
+    NSLog(@"%@",self.paramDict);
+    
+    [self enterDefaultController];
 }
 
 @end

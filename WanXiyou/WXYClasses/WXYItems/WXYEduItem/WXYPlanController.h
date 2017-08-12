@@ -10,4 +10,7 @@
 
 @interface WXYPlanController : UIViewController
 
+@property(nonatomic, strong) NSArray *titleArray;
+@property(nonatomic, strong) NSArray<UIColor *> *colorArray;
+
 @end

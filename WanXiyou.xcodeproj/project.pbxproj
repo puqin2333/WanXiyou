@@ -16,7 +16,20 @@
 		74058FD81F30786300C8EE34 /* LDSegmentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FD51F30786300C8EE34 /* LDSegmentView.m */; };
 		74058FD91F30786300C8EE34 /* LDSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FD71F30786300C8EE34 /* LDSegmentViewController.m */; };
 		74058FDC1F307A9700C8EE34 /* WXYPlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74058FDB1F307A9700C8EE34 /* WXYPlanController.m */; };
+		74252D2F1F398FA10038F2B2 /* WXYUserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74252D2E1F398FA10038F2B2 /* WXYUserInfoModel.m */; };
+		74252D331F39A6130038F2B2 /* icon_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 74252D321F39A6130038F2B2 /* icon_1024.png */; };
+		74252D391F39D70F0038F2B2 /* WXYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 74252D381F39D70F0038F2B2 /* WXYTextField.m */; };
+		74252D3C1F39E99E0038F2B2 /* WXYLoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74252D3B1F39E99E0038F2B2 /* WXYLoginPresenter.m */; };
+		74252D3F1F39F2210038F2B2 /* WXYNetWorking.m in Sources */ = {isa = PBXBuildFile; fileRef = 74252D3E1F39F2210038F2B2 /* WXYNetWorking.m */; };
+		74438F9A1F3B148E004756AC /* UIAlertController+show.m in Sources */ = {isa = PBXBuildFile; fileRef = 74438F991F3B148E004756AC /* UIAlertController+show.m */; };
+		74571AE51F3710EB0013FE4F /* WXYBezierCurveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74571AE41F3710EB0013FE4F /* WXYBezierCurveView.m */; };
+		745EDD421F32FFA3008F3559 /* WXYScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 745EDD411F32FFA3008F3559 /* WXYScoreView.m */; };
+		747331381F3D986800FC8AB5 /* WXYEduPresenters.m in Sources */ = {isa = PBXBuildFile; fileRef = 747331371F3D986800FC8AB5 /* WXYEduPresenters.m */; };
+		7491E1931F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7491E1921F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.m */; };
+		749FB9A01F349F7900013634 /* WXYScoreDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 749FB99F1F349F7900013634 /* WXYScoreDetailView.m */; };
 		74F31F281F3173FA00C31244 /* WXYWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F31F271F3173FA00C31244 /* WXYWeekView.m */; };
+		74F31F341F32209400C31244 /* WXYLessonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F31F331F32209400C31244 /* WXYLessonModel.m */; };
+		74F31F371F32239800C31244 /* WXYLessonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F31F361F32239800C31244 /* WXYLessonCollectionViewCell.m */; };
 		74F5B9611F2EB2E4002842F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9601F2EB2E4002842F9 /* main.m */; };
 		74F5B96C1F2EB2E4002842F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */; };
 		74F5B96F1F2EB2E4002842F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F5B96D1F2EB2E4002842F9 /* LaunchScreen.storyboard */; };
@@ -27,6 +40,13 @@
 		74F5B9BA1F2F09EE002842F9 /* WXYLeftMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9B91F2F09EE002842F9 /* WXYLeftMenuController.m */; };
 		74F5B9C01F2F117A002842F9 /* WXYEduController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9BF1F2F117A002842F9 /* WXYEduController.m */; };
 		74F5B9C31F2F1337002842F9 /* WXYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F5B9C21F2F1337002842F9 /* WXYHomeController.m */; };
+		74F6BE9B1F38069F007B82A6 /* WXYLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F6BE9A1F38069F007B82A6 /* WXYLoginModel.m */; };
+		74F6BE9E1F380B73007B82A6 /* WXYLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F6BE9D1F380B73007B82A6 /* WXYLoginViewController.m */; };
+		74F6BEA01F381297007B82A6 /* 启动页.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 74F6BE9F1F381297007B82A6 /* 启动页.jpg */; };
+		74F6BEA21F3812D2007B82A6 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 74F6BEA11F3812D2007B82A6 /* start.png */; };
+		74F727661F354FBB0035134F /* WXYScoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F727651F354FBB0035134F /* WXYScoreCell.m */; };
+		74F727A91F35B8DA0035134F /* WXYScoreStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F727A81F35B8DA0035134F /* WXYScoreStatusView.m */; };
+		74F727AC1F35E3750035134F /* WXYScoreStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F727AB1F35E3750035134F /* WXYScoreStatusCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +84,33 @@
 		74058FD71F30786300C8EE34 /* LDSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSegmentViewController.m; sourceTree = "<group>"; };
 		74058FDA1F307A9700C8EE34 /* WXYPlanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYPlanController.h; sourceTree = "<group>"; };
 		74058FDB1F307A9700C8EE34 /* WXYPlanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYPlanController.m; sourceTree = "<group>"; };
+		74252D2D1F398FA10038F2B2 /* WXYUserInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYUserInfoModel.h; sourceTree = "<group>"; };
+		74252D2E1F398FA10038F2B2 /* WXYUserInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYUserInfoModel.m; sourceTree = "<group>"; };
+		74252D321F39A6130038F2B2 /* icon_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_1024.png; sourceTree = "<group>"; };
+		74252D371F39D70F0038F2B2 /* WXYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYTextField.h; sourceTree = "<group>"; };
+		74252D381F39D70F0038F2B2 /* WXYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYTextField.m; sourceTree = "<group>"; };
+		74252D3A1F39E99E0038F2B2 /* WXYLoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginPresenter.h; sourceTree = "<group>"; };
+		74252D3B1F39E99E0038F2B2 /* WXYLoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginPresenter.m; sourceTree = "<group>"; };
+		74252D3D1F39F2210038F2B2 /* WXYNetWorking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYNetWorking.h; sourceTree = "<group>"; };
+		74252D3E1F39F2210038F2B2 /* WXYNetWorking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYNetWorking.m; sourceTree = "<group>"; };
+		74438F981F3B148E004756AC /* UIAlertController+show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+show.h"; sourceTree = "<group>"; };
+		74438F991F3B148E004756AC /* UIAlertController+show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+show.m"; sourceTree = "<group>"; };
+		74571AE31F3710EB0013FE4F /* WXYBezierCurveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYBezierCurveView.h; sourceTree = "<group>"; };
+		74571AE41F3710EB0013FE4F /* WXYBezierCurveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYBezierCurveView.m; sourceTree = "<group>"; };
+		745EDD401F32FFA3008F3559 /* WXYScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreView.h; sourceTree = "<group>"; };
+		745EDD411F32FFA3008F3559 /* WXYScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreView.m; sourceTree = "<group>"; };
+		747331361F3D986800FC8AB5 /* WXYEduPresenters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYEduPresenters.h; sourceTree = "<group>"; };
+		747331371F3D986800FC8AB5 /* WXYEduPresenters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYEduPresenters.m; sourceTree = "<group>"; };
+		7491E1911F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLessonCollectionReusableView.h; sourceTree = "<group>"; };
+		7491E1921F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLessonCollectionReusableView.m; sourceTree = "<group>"; };
+		749FB99E1F349F7900013634 /* WXYScoreDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreDetailView.h; sourceTree = "<group>"; };
+		749FB99F1F349F7900013634 /* WXYScoreDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreDetailView.m; sourceTree = "<group>"; };
 		74F31F261F3173FA00C31244 /* WXYWeekView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYWeekView.h; sourceTree = "<group>"; };
 		74F31F271F3173FA00C31244 /* WXYWeekView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYWeekView.m; sourceTree = "<group>"; };
+		74F31F321F32209400C31244 /* WXYLessonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLessonModel.h; sourceTree = "<group>"; };
+		74F31F331F32209400C31244 /* WXYLessonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLessonModel.m; sourceTree = "<group>"; };
+		74F31F351F32239800C31244 /* WXYLessonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLessonCollectionViewCell.h; sourceTree = "<group>"; };
+		74F31F361F32239800C31244 /* WXYLessonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLessonCollectionViewCell.m; sourceTree = "<group>"; };
 		74F5B95C1F2EB2E4002842F9 /* WanXiyou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanXiyou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F5B9601F2EB2E4002842F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +133,18 @@
 		74F5B9BF1F2F117A002842F9 /* WXYEduController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYEduController.m; sourceTree = "<group>"; };
 		74F5B9C11F2F1337002842F9 /* WXYHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WXYHomeController.h; path = WanXiyou/WXYClasses/WXYMian/WXYHomeController.h; sourceTree = SOURCE_ROOT; };
 		74F5B9C21F2F1337002842F9 /* WXYHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WXYHomeController.m; path = WanXiyou/WXYClasses/WXYMian/WXYHomeController.m; sourceTree = SOURCE_ROOT; };
+		74F6BE991F38069F007B82A6 /* WXYLoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginModel.h; sourceTree = "<group>"; };
+		74F6BE9A1F38069F007B82A6 /* WXYLoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginModel.m; sourceTree = "<group>"; };
+		74F6BE9C1F380B73007B82A6 /* WXYLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYLoginViewController.h; sourceTree = "<group>"; };
+		74F6BE9D1F380B73007B82A6 /* WXYLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYLoginViewController.m; sourceTree = "<group>"; };
+		74F6BE9F1F381297007B82A6 /* 启动页.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "启动页.jpg"; sourceTree = "<group>"; };
+		74F6BEA11F3812D2007B82A6 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start.png; sourceTree = "<group>"; };
+		74F727641F354FBB0035134F /* WXYScoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreCell.h; sourceTree = "<group>"; };
+		74F727651F354FBB0035134F /* WXYScoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreCell.m; sourceTree = "<group>"; };
+		74F727A71F35B8DA0035134F /* WXYScoreStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreStatusView.h; sourceTree = "<group>"; };
+		74F727A81F35B8DA0035134F /* WXYScoreStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreStatusView.m; sourceTree = "<group>"; };
+		74F727AA1F35E3750035134F /* WXYScoreStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXYScoreStatusCell.h; sourceTree = "<group>"; };
+		74F727AB1F35E3750035134F /* WXYScoreStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXYScoreStatusCell.m; sourceTree = "<group>"; };
 		B781408D7AC0013D69E85B57 /* libPods-WanXiyou.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WanXiyou.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3410B2C4375BC3DCDB3B8F4 /* Pods-WanXiyou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WanXiyou.release.xcconfig"; path = "Pods/Target Support Files/Pods-WanXiyou/Pods-WanXiyou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,11 +202,28 @@
 			path = LDSegmentView;
 			sourceTree = "<group>";
 		};
+		745EDD3F1F32FEF0008F3559 /* score */ = {
+			isa = PBXGroup;
+			children = (
+				745EDD401F32FFA3008F3559 /* WXYScoreView.h */,
+				745EDD411F32FFA3008F3559 /* WXYScoreView.m */,
+				749FB99E1F349F7900013634 /* WXYScoreDetailView.h */,
+				749FB99F1F349F7900013634 /* WXYScoreDetailView.m */,
+				74F727641F354FBB0035134F /* WXYScoreCell.h */,
+				74F727651F354FBB0035134F /* WXYScoreCell.m */,
+			);
+			path = score;
+			sourceTree = "<group>";
+		};
 		74F31F251F3173B800C31244 /* shedule */ = {
 			isa = PBXGroup;
 			children = (
 				74F31F261F3173FA00C31244 /* WXYWeekView.h */,
 				74F31F271F3173FA00C31244 /* WXYWeekView.m */,
+				74F31F351F32239800C31244 /* WXYLessonCollectionViewCell.h */,
+				74F31F361F32239800C31244 /* WXYLessonCollectionViewCell.m */,
+				7491E1911F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.h */,
+				7491E1921F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.m */,
 			);
 			path = shedule;
 			sourceTree = "<group>";
@@ -167,6 +241,7 @@
 		74F31F2C1F32105700C31244 /* Score */ = {
 			isa = PBXGroup;
 			children = (
+				745EDD3F1F32FEF0008F3559 /* score */,
 				74058FC21F3061F900C8EE34 /* WXYScoreController.h */,
 				74058FC31F3061F900C8EE34 /* WXYScoreController.m */,
 			);
@@ -176,6 +251,7 @@
 		74F31F2D1F32108200C31244 /* Stats */ = {
 			isa = PBXGroup;
 			children = (
+				74F727A61F35B88C0035134F /* scoreStatus */,
 				74058FC51F30624B00C8EE34 /* WXYStatsController.h */,
 				74058FC61F30624B00C8EE34 /* WXYStatsController.m */,
 			);
@@ -225,7 +301,10 @@
 		74F5B95F1F2EB2E4002842F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74252D321F39A6130038F2B2 /* icon_1024.png */,
 				74F5B96B1F2EB2E4002842F9 /* Assets.xcassets */,
+				74F6BEA11F3812D2007B82A6 /* start.png */,
+				74F6BE9F1F381297007B82A6 /* 启动页.jpg */,
 				74F5B9701F2EB2E4002842F9 /* Info.plist */,
 				74F5B96D1F2EB2E4002842F9 /* LaunchScreen.storyboard */,
 				74F5B9601F2EB2E4002842F9 /* main.m */,
@@ -279,7 +358,7 @@
 		74F5B9941F2EB8A7002842F9 /* WXYCategory */ = {
 			isa = PBXGroup;
 			children = (
-				74F5B99E1F2EBC04002842F9 /* UINSExtension */,
+				74F5B99E1F2EBC04002842F9 /* UIExtension */,
 				74F5B99D1F2EBBEC002842F9 /* NSExtension */,
 			);
 			path = WXYCategory;
@@ -289,6 +368,10 @@
 			isa = PBXGroup;
 			children = (
 				74058FD21F30786300C8EE34 /* LZSegmentViewController */,
+				74252D371F39D70F0038F2B2 /* WXYTextField.h */,
+				74252D381F39D70F0038F2B2 /* WXYTextField.m */,
+				74252D3D1F39F2210038F2B2 /* WXYNetWorking.h */,
+				74252D3E1F39F2210038F2B2 /* WXYNetWorking.m */,
 			);
 			path = WXYTools;
 			sourceTree = "<group>";
@@ -298,7 +381,7 @@
 			children = (
 				74F5B9BD1F2F1135002842F9 /* Models */,
 				74F5B9BC1F2F112D002842F9 /* Views */,
-				74F5B9BB1F2F1122002842F9 /* Presents */,
+				74F5B9BB1F2F1122002842F9 /* Presenters */,
 			);
 			path = WXYEduItem;
 			sourceTree = "<group>";
@@ -334,6 +417,9 @@
 		74F5B99B1F2EBB8C002842F9 /* WXYLoginItem */ = {
 			isa = PBXGroup;
 			children = (
+				74F6BE961F380645007B82A6 /* Model */,
+				74F6BE971F380656007B82A6 /* View */,
+				74F6BE981F38065D007B82A6 /* Presenters */,
 			);
 			path = WXYLoginItem;
 			sourceTree = "<group>";
@@ -352,12 +438,15 @@
 			path = NSExtension;
 			sourceTree = "<group>";
 		};
-		74F5B99E1F2EBC04002842F9 /* UINSExtension */ = {
+		74F5B99E1F2EBC04002842F9 /* UIExtension */ = {
 			isa = PBXGroup;
 			children = (
 				74058FBC1F301C2400C8EE34 /* UILabel+WXYLabel.h */,
 				74058FBD1F301C2400C8EE34 /* UILabel+WXYLabel.m */,
+				74438F981F3B148E004756AC /* UIAlertController+show.h */,
+				74438F991F3B148E004756AC /* UIAlertController+show.m */,
 			);
+			name = UIExtension;
 			path = UINSExtension;
 			sourceTree = "<group>";
 		};
@@ -407,26 +496,30 @@
 		74F5B9B71F2F09BB002842F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				74252D2D1F398FA10038F2B2 /* WXYUserInfoModel.h */,
+				74252D2E1F398FA10038F2B2 /* WXYUserInfoModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
 		};
-		74F5B9BB1F2F1122002842F9 /* Presents */ = {
+		74F5B9BB1F2F1122002842F9 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				747331361F3D986800FC8AB5 /* WXYEduPresenters.h */,
+				747331371F3D986800FC8AB5 /* WXYEduPresenters.m */,
 			);
-			name = Presents;
+			name = Presenters;
 			sourceTree = "<group>";
 		};
 		74F5B9BC1F2F112D002842F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				74F31F2E1F3210B400C31244 /* Plan */,
-				74F31F2D1F32108200C31244 /* Stats */,
-				74F31F2C1F32105700C31244 /* Score */,
-				74F31F2B1F32103900C31244 /* Shedule */,
 				74F5B9BE1F2F117A002842F9 /* WXYEduController.h */,
 				74F5B9BF1F2F117A002842F9 /* WXYEduController.m */,
+				74F31F2B1F32103900C31244 /* Shedule */,
+				74F31F2C1F32105700C31244 /* Score */,
+				74F31F2D1F32108200C31244 /* Stats */,
+				74F31F2E1F3210B400C31244 /* Plan */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -434,8 +527,50 @@
 		74F5B9BD1F2F1135002842F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				74F31F321F32209400C31244 /* WXYLessonModel.h */,
+				74F31F331F32209400C31244 /* WXYLessonModel.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		74F6BE961F380645007B82A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74F6BE991F38069F007B82A6 /* WXYLoginModel.h */,
+				74F6BE9A1F38069F007B82A6 /* WXYLoginModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		74F6BE971F380656007B82A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74F6BE9C1F380B73007B82A6 /* WXYLoginViewController.h */,
+				74F6BE9D1F380B73007B82A6 /* WXYLoginViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		74F6BE981F38065D007B82A6 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				74252D3A1F39E99E0038F2B2 /* WXYLoginPresenter.h */,
+				74252D3B1F39E99E0038F2B2 /* WXYLoginPresenter.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		74F727A61F35B88C0035134F /* scoreStatus */ = {
+			isa = PBXGroup;
+			children = (
+				74F727A71F35B8DA0035134F /* WXYScoreStatusView.h */,
+				74F727A81F35B8DA0035134F /* WXYScoreStatusView.m */,
+				74F727AA1F35E3750035134F /* WXYScoreStatusCell.h */,
+				74F727AB1F35E3750035134F /* WXYScoreStatusCell.m */,
+				74571AE31F3710EB0013FE4F /* WXYBezierCurveView.h */,
+				74571AE41F3710EB0013FE4F /* WXYBezierCurveView.m */,
+			);
+			path = scoreStatus;
 			sourceTree = "<group>";
 		};
 		B2C3B65642A08AC8180B646C /* Pods */ = {
@@ -556,7 +691,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F6BEA01F381297007B82A6 /* 启动页.jpg in Resources */,
 				74F5B96F1F2EB2E4002842F9 /* LaunchScreen.storyboard in Resources */,
+				74F6BEA21F3812D2007B82A6 /* start.png in Resources */,
+				74252D331F39A6130038F2B2 /* icon_1024.png in Resources */,
 				74F5B96C1F2EB2E4002842F9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,21 +768,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74252D3F1F39F2210038F2B2 /* WXYNetWorking.m in Sources */,
 				74F5B9AE1F2EEF92002842F9 /* AppDelegate.m in Sources */,
 				74058FDC1F307A9700C8EE34 /* WXYPlanController.m in Sources */,
 				74F5B9B31F2EF44B002842F9 /* WXYNavigationController.m in Sources */,
+				74252D2F1F398FA10038F2B2 /* WXYUserInfoModel.m in Sources */,
+				74F727AC1F35E3750035134F /* WXYScoreStatusCell.m in Sources */,
 				74F31F281F3173FA00C31244 /* WXYWeekView.m in Sources */,
+				745EDD421F32FFA3008F3559 /* WXYScoreView.m in Sources */,
+				749FB9A01F349F7900013634 /* WXYScoreDetailView.m in Sources */,
+				74F31F341F32209400C31244 /* WXYLessonModel.m in Sources */,
+				74F727A91F35B8DA0035134F /* WXYScoreStatusView.m in Sources */,
 				74F5B9BA1F2F09EE002842F9 /* WXYLeftMenuController.m in Sources */,
+				74252D3C1F39E99E0038F2B2 /* WXYLoginPresenter.m in Sources */,
 				74F5B9C01F2F117A002842F9 /* WXYEduController.m in Sources */,
+				74571AE51F3710EB0013FE4F /* WXYBezierCurveView.m in Sources */,
+				74F6BE9B1F38069F007B82A6 /* WXYLoginModel.m in Sources */,
+				74F727661F354FBB0035134F /* WXYScoreCell.m in Sources */,
 				74058FBB1F3009B300C8EE34 /* WXYHeaderView.m in Sources */,
+				747331381F3D986800FC8AB5 /* WXYEduPresenters.m in Sources */,
 				74058FD91F30786300C8EE34 /* LDSegmentViewController.m in Sources */,
 				74F5B9611F2EB2E4002842F9 /* main.m in Sources */,
 				74058FC11F3061CE00C8EE34 /* WXYSheduleController.m in Sources */,
+				7491E1931F3EB0F100AE8BF9 /* WXYLessonCollectionReusableView.m in Sources */,
 				74058FD81F30786300C8EE34 /* LDSegmentView.m in Sources */,
 				74058FC41F3061F900C8EE34 /* WXYScoreController.m in Sources */,
+				74F6BE9E1F380B73007B82A6 /* WXYLoginViewController.m in Sources */,
 				74058FBE1F301C2400C8EE34 /* UILabel+WXYLabel.m in Sources */,
 				74F5B9C31F2F1337002842F9 /* WXYHomeController.m in Sources */,
 				74058FC71F30624B00C8EE34 /* WXYStatsController.m in Sources */,
+				74F31F371F32239800C31244 /* WXYLessonCollectionViewCell.m in Sources */,
+				74252D391F39D70F0038F2B2 /* WXYTextField.m in Sources */,
+				74438F9A1F3B148E004756AC /* UIAlertController+show.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -786,6 +941,7 @@
 			baseConfigurationReference = 4AE92EC7B041AB65C1F83B8F /* Pods-WanXiyou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = WanXiyou/WXYClasses/WXYMian/WXYPrefixHeader.pch;
 				INFOPLIST_FILE = WanXiyou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -799,6 +955,7 @@
 			baseConfigurationReference = D3410B2C4375BC3DCDB3B8F4 /* Pods-WanXiyou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = WanXiyou/WXYClasses/WXYMian/WXYPrefixHeader.pch;
 				INFOPLIST_FILE = WanXiyou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
