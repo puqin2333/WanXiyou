@@ -85,5 +85,41 @@
     return cell;
 }
 
+#pragma mark --UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:{
+            WXYEduController *eduVC = [[WXYEduController alloc] init];
+            [UIViewController changeViewControllerByNavigationVCInRevealVCFront:eduVC];
+        }
+            break;
+        case 1:{
+            WXYAttendceController *attendceVC = [[WXYAttendceController alloc] init];
+            [UIViewController changeViewControllerByNavigationVCInRevealVCFront:attendceVC];
+        }
+            break;
+
+        case 2:{
+            WXYLibraryController *libraryVC = [[WXYLibraryController alloc] init];
+            [UIViewController changeViewControllerByNavigationVCInRevealVCFront:libraryVC];
+        }
+            break;
+
+        case 3:{
+            WXYRunViewController *runVC = [[WXYRunViewController alloc] init];
+            [UIViewController changeViewControllerByNavigationVCInRevealVCFront:runVC];
+        }
+            break;
+        case 4:{
+            WXYSportsController *sportVC = [[WXYSportsController alloc] init];
+            [UIViewController changeViewControllerByNavigationVCInRevealVCFront:sportVC];
+        }
+            break;
+
+        default:
+            break;
+    }
+}
 
 @end

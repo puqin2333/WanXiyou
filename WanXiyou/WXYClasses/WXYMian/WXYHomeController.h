@@ -10,4 +10,6 @@
 
 @interface WXYHomeController : UIViewController
 
+- (void)showDetailViewController:(UIViewController *)vc;
+
 @end

@@ -13,9 +13,15 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.scoreLabel = [UILabel wxy_labelWithKindFontSize:[UIFont fontWithName:@"IowanOldStyle-Italic" size:15 * kScreenRatio] textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentCenter];
-        [self addSubview:_scoreLabel];
-        _scoreLabel.frame = self.frame;
+        UILabel *scoreLabel = [UILabel wxy_labelWithKindFontSize:[UIFont fontWithName:@"IowanOldStyle-Italic" size:15 * kScreenRatio] textColor:[UIColor whiteColor] textAlignment:NSTextAlignmentCenter];
+        [self.contentView addSubview:scoreLabel];
+        [scoreLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.leading.equalTo(@(5));
+            make.top.equalTo(@(5));
+            make.trailing.equalTo(@(-5));
+            make.bottom.equalTo(@(-5));
+        }];
+        self.scoreLabel = scoreLabel;
     }
     return self;
 }

@@ -31,7 +31,7 @@
     [[UINavigationBar appearance] setTitleTextAttributes:dic];
     
     //设置 UINavgationBar 的背景颜色
-//    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:93.0/255.0 green:188.0/255.0 blue:208.0/255.0 alpha:1]];
     
 
 }

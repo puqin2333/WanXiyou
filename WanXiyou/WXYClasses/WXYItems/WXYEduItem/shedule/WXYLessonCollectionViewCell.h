@@ -11,6 +11,7 @@
 @interface WXYLessonCollectionViewCell : UICollectionViewCell
 
 @property(nonatomic, strong) UILabel *lessonLabel;
+@property(nonatomic, strong) UILabel *timeLabel;
 @property(nonatomic, strong) UILabel *teacherLabel;
 @property(nonatomic, strong) UILabel *classLabel;
 @property(nonatomic, strong) NSString *lesson;

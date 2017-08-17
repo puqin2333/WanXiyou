@@ -320,6 +320,11 @@ static CGFloat __fontSize;
 }
 @end
 
+@interface LDSegmentModel ()
+
+@property(nonatomic, strong)LDSegmentView *model;
+
+@end
 
 @implementation LDSegmentModel
 
@@ -335,9 +340,13 @@ static CGFloat __fontSize;
 
 - (CGFloat)width {
     if (_width <= 0) {
-//        CGFloat wid = [self.title boundingRectWithSize:CGSizeMake(0, 30) options:NSStringDrawingUsesFontLeading|NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName: [UIFont systemFontOfSize:self.fontSize]} context:nil].size.width;
-        CGFloat wid = kScreenRatio * 100;
-        _width = wid;
+//        if (_model.dataSources.count < 3) {dssdddwwadaswdswaswssdd    hshdsjhsjuiwuuuxxxxxxxxx
+//            CGFloat wid = kScreenWidht / _model.dataSources.count;
+//            _width = wid;
+//        } else {
+            CGFloat wid = kScreenRatio * 100;
+            _width = wid;
+//        }
     }
     
     return _width;

@@ -17,12 +17,11 @@
 
 @implementation WXYLessonModel
 
-- (void)getResultback:(Callback)callback {
+- (void)getResultback:(Requestback)callback {
     NSString *urlString = @"http://139.199.20.248:8080/WanXiyou/edu/getLessonList";
     AppDelegate * appDelegate = [[UIApplication sharedApplication] delegate];
     
     [WXYNetWorking wxy_Request:urlString params:appDelegate.paramDict requestType:HttpRequestTypeGet success:^(id responseObject) {
-//        NSLog(@"responseOIbject--> %@",responseObject);
         callback(responseObject);
     } failure:^(NSError *error) {
         NSLog(@"error--> %@",error);

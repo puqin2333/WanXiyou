@@ -269,6 +269,7 @@
         else {
             UIAlertController *alertController = [UIAlertController showAlertWithTitle:@"登录失败" message:@"请确认输入是否正确！" ];
             [self presentViewController:alertController animated:YES completion:nil];
+            [self changeSecurityCodeView];
         }
     }];
 }

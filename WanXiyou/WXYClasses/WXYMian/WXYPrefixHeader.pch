@@ -52,26 +52,51 @@
 #import "WXYSheduleController.h" //课表
 #import "WXYWeekView.h"
 #import "WXYLessonCollectionViewCell.h"
-#import "WXYLessonCollectionReusableView.h"
 #import "WXYLessonModel.h"
 
 #import "WXYScoreController.h" // 成绩
 #import "WXYScoreView.h"
 #import "WXYScoreCell.h"
 #import "WXYScoreDetailView.h"
+#import "WXYScoreDetailCell.h"
+#import "WXYScoreModel.h"
 
 #import "WXYStatsController.h" // 成绩统计
 #import "WXYScoreStatusView.h"
 #import "WXYScoreStatusCell.h"
 #import "WXYBezierCurveView.h"
+#import "WXYStatusModel.h"
 
 #import "WXYPlanController.h"  // 培养计划
+#import "WXYPlanView.h"
+#import "WXYPlanListCell.h"
+#import "WXYPlanDetailView.h"
+#import "WXYPlanDetailViewCell.h"
+#import "WXYPlanModel.h"
+
+// 智慧教室
+#import "WXYAttendceController.h"
+
+// 图书馆
+#import "WXYLibraryController.h"
+
+// 跑步
+#import "WXYRunViewController.h"
+#import "WXYRuningController.h"
+#import "WXYDataStatusController.h"
+
+// 体育选课
+#import "WXYSportsController.h"
+
+// 设置
+#import "WXYSettingController.h"
+
+
 
 // 登陆
 #import "WXYLoginViewController.h"
 #import "WXYLoginModel.h"
 #import "WXYLoginPresenter.h"
-// 登陆
 
 
 /**
@@ -79,6 +104,7 @@
  */
 #import "UILabel+WXYLabel.h"
 #import "UIAlertController+show.h"
+#import "UIViewController+WXYViewControllerExtension.h"
 
 /**
  *  工具类

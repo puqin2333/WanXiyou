@@ -28,7 +28,7 @@
 //    
 //    isNewVersion ? [self enterLoginController] : [self enterDefaultController];
     [self enterLoginController];
-    
+//
     [self.window makeKeyAndVisible];
     
 //  监听 loginController 发出的通知
@@ -64,7 +64,8 @@
     WXYLeftMenuController *leftMenuController = [[WXYLeftMenuController alloc] init];
     //Navgation根控制器
     WXYHomeController *homeController = [[WXYHomeController alloc] init];
-//    WXYEduController *eduController = [[WXYEduController alloc] init];
+    WXYEduController *eduController = [[WXYEduController alloc] init];
+    [homeController showDetailViewController:eduController];
     WXYNavigationController *navigationController = [[WXYNavigationController alloc] initWithRootViewController:homeController];
     
     // 设置 PkRevealController 为 window 的根控制器

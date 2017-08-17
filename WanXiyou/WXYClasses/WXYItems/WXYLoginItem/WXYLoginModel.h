@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^Callback)(NSDictionary *result);
+typedef void(^Callback)(id result);
 
 @interface WXYLoginModel : NSObject
 

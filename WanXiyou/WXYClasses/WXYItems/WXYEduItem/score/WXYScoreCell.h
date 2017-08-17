@@ -16,6 +16,7 @@ typedef void(^WXYCellDeselectBlock)();
 @property(nonatomic, strong) UILabel *termLabel;
 @property(nonatomic, strong) UIButton *detailButton;
 
++ (instancetype)cellWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
 - (void)addSelectBlock:(WXYCellSelectBlock)block;
 - (void)addDeselectBlock:(WXYCellDeselectBlock)block;
 - (void)selectToShowDetailWithContentOffsetY:(CGFloat)contentOffsetY;

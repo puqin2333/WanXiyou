@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface WXYScoreStatusView : UIView
- 
+
+@property(nonatomic, strong) UICollectionView *scoreStatusShowView;
+
 @end

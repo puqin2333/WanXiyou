@@ -10,7 +10,7 @@
 
 @interface WXYPlanController ()
 
-@property(nonatomic, strong) WXYScoreView *scoreView;
+@property(nonatomic, strong) WXYPlanView *planListView;
 
 @end
 
@@ -18,10 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.scoreView = [[WXYScoreView alloc] initWithFrame:CGRectMake(kScreenWidht * 0.07, kScreenHeight * 0.12, kScreenWidht * 0.86, kScreenHeight * 0.7)];
-    [_scoreView getColorArray:self.colorArray titleArray:self.titleArray];
+    self.planListView = [[WXYPlanView alloc] initWithFrame:CGRectMake(kScreenWidht * 0.07, kScreenHeight * 0.12, kScreenWidht * 0.86, kScreenHeight * 0.7)];
+    [_planListView getColorArray:self.colorArray titleArray:self.titleArray];
     
-    [self.view addSubview:_scoreView];
+    [self.view addSubview:_planListView];
 }
 
 // cell 的标题

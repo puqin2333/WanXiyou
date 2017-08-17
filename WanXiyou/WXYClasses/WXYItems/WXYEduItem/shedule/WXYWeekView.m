@@ -10,11 +10,6 @@
 
 @interface WXYWeekView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
-@property(nonatomic, strong) UIView *weekHeaderView;
-@property(nonatomic, strong) UIView *classSectionView;
-@property(nonatomic, strong) UIScrollView *weakScrollView;
-@property(nonatomic, strong) UICollectionView *leasonShowView;
-@property(nonatomic, strong) NSArray *colorArray;
 
 @end
 
@@ -28,7 +23,7 @@
     return self;
 }
 
-// 初始化周课表视图
+// 初始化视图
 - (void)initWeekView {
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidht, kScreenHeight - kScreenRatio * 85)];
@@ -155,74 +150,8 @@
     
     //注册collectionViewCell: WXYLessonCollectionCell 是我自定义的 cell
     [self.leasonShowView registerClass:[WXYLessonCollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
-    [self.leasonShowView registerClass:[WXYLessonCollectionReusableView class] forCellWithReuseIdentifier:@"cell"];
 }
 
-#pragma mark --UICollectionViewDataSource
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 7;
-}
-
-
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    WXYLessonCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    WXYEduPresenters *presenter = [[WXYEduPresenters alloc] init];
-    [presenter requestLessonList:^(NSDictionary *result) {
-        NSDictionary *lessonModelDic = [NSDictionary dictionary];
-        lessonModelDic = result;
-        NSLog(@"%@",lessonModelDic);
-        NSArray *lessonList = lessonModelDic[@"data"];
-        NSArray *lesson = lessonList[indexPath.section];
-        NSDictionary *class = lesson[indexPath.row];
-        if ([class[@"empty"] isEqualToString:@"0"]) {
-            NSLog(@"%@",class[@"lesson"]);
-            cell.backgroundColor = self.colorArray[indexPath.row*(indexPath.section + 1)%5];
-        } else{
-            cell.backgroundColor = [UIColor clearColor];
-        }
-    }];
-    return cell;
-}
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 5;
-}
-
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    WXYLessonCollectionReusableView *view = [collectionView dequeueReusableSupplementaryViewOfKind:uicoll withReuseIdentifier:@"cell" forIndexPath:indexPath];
-//    WXYEduPresenters *presenter = [[WXYEduPresenters alloc] init];
-//    [presenter requestLessonList:^(NSDictionary *result) {
-//        NSDictionary *lessonModelDic = [NSDictionary dictionary];
-//        lessonModelDic = result;
-//        NSLog(@"%@",lessonModelDic);
-//        WXYLessonModel *lessonModel = [WXYLessonModel yy_modelWithDictionary:lessonModelDic];
-//        .teacherLabel.text = lessonModel.lesson_teacher;
-//        NSArray *lessonList = lessonModelDic[@"data"];
-//        NSArray *lesson = lessonList[indexPath.section];
-//        NSDictionary *class = lesson[indexPath.row];
-//        if ([class[@"empty"] isEqualToString:@"0"]) {
-//            NSLog(@"%@",class[@"lesson"]);
-//            cell.lessonLabel.text = class[@"lesson"];
-//            cell.lessonLabel.textColor = [UIColor whiteColor];
-//            cell.backgroundColor = self.colorArray[indexPath.row*(indexPath.section + 1)%5];
-//            NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:class[@"lesson"]];
-//            //设置段落间的大小
-//            NSMutableParagraphStyle *pargraphStyle = [[NSMutableParagraphStyle alloc] init];
-//            [pargraphStyle setLineSpacing:3 * kScreenRatio];
-//            [pargraphStyle setAlignment:NSTextAlignmentCenter];
-//            //对attributedString对象设置间距属性
-//            [attributedString addAttribute:NSParagraphStyleAttributeName value:pargraphStyle range:NSMakeRange(0, [attributedString length])];
-//            [cell.lessonLabel setAttributedText:attributedString];
-//        } else{
-//            cell.backgroundColor = [UIColor clearColor];
-//        }
-//
-//        NSLog(@"lesson -- %@",class[@"lesson"]);
-//    }];
-//
-//}
 
 #pragma mark -- UICollectionViewDelegateFlowLayout
 /** 每个cell的尺寸*/
@@ -231,25 +160,12 @@
     return CGSizeMake((kScreenWidht - kScreenRatio * 45) / 7,(kScreenHeight - kScreenRatio * 85) / 5);
 }
 
-
 #pragma mark --UICollectionViewDelegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"点击了第 %zd组 第%zd个",indexPath.section, indexPath.row);
 }
 
-// 设置颜色数组
-- (NSArray *)colorArray {
-    if (_colorArray == nil) {
-        UIColor *color1 = [UIColor colorWithRed:0.54f green:0.76f blue:0.29f alpha:1.00f];
-        UIColor *color2 = [UIColor colorWithRed:0.81f green:0.58f blue:0.84f alpha:1.00f];
-        UIColor *color3 = [UIColor colorWithRed:0.99f green:0.75f blue:0.02f alpha:1.00f];
-        UIColor *color4 = [UIColor colorWithRed:0.20f green:0.71f blue:0.89f alpha:1.00f];
-        UIColor *color5 = [UIColor colorWithRed:0.99f green:0.35f blue:0.13f alpha:1.00f];
-        _colorArray = @[color1,color2,color3,color4,color5];
-    }
-    return _colorArray;
 
-}
 
 @end

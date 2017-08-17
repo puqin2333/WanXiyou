@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 @class WXYLoginPresenter;
 
-typedef void(^Callback)(NSDictionary *result);
-
 @interface WXYLoginViewController : UIViewController
 
 @property(nonatomic, strong) UIImageView *securityCodeView; // 验证码

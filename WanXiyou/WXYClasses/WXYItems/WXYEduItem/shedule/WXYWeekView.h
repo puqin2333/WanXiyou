@@ -10,4 +10,10 @@
 
 @interface WXYWeekView : UIView
 
+@property(nonatomic, strong) UIView *weekHeaderView;
+@property(nonatomic, strong) UIView *classSectionView;
+@property(nonatomic, strong) UIScrollView *weakScrollView;
+@property(nonatomic, strong) UICollectionView *leasonShowView;
+@property(nonatomic, strong) NSArray *colorArray;
+
 @end

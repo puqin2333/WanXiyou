@@ -10,9 +10,9 @@
 
 @interface WXYScoreStatusView ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 
-@property(nonatomic, strong) UICollectionView *scoreStatusShowView;
 @property(nonatomic, strong) NSArray *array;
 @property(nonatomic, strong) NSArray *array1;
+
 @end
 
 @implementation WXYScoreStatusView
@@ -20,8 +20,6 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        self.array = @[@"学分要求",@"获得学分",@"未通过学分",@"还需学分"];
-        self.array1 = @[@"必修课",@"选修课",@"课外实践教学"];
         [self initUI];
     }
     
@@ -40,15 +38,15 @@
 - (UICollectionView *)scoreStatusShowView {
     if (_scoreStatusShowView == nil) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        // 设置collectionView的滚动方向，需要注意的是如果使用了collectionview的headerview或者footerview的话， 如果设置了水平滚动方向的话，那么就只有宽度起作用了了
+        
         [layout setScrollDirection:UICollectionViewScrollDirectionVertical];
         layout.minimumLineSpacing = 1.0f; // 设置最小行间距
         layout.minimumInteritemSpacing = 1.0f; // 设置垂直间距
         
-        UICollectionView *scoreStatusShowView = [[UICollectionView alloc] initWithFrame:CGRectMake(kScreenWidht * 0.05, kScreenRatio * 10, CGRectGetWidth(self.frame) - kScreenWidht * 0.1, CGRectGetHeight(self.frame) - kScreenRatio * 20) collectionViewLayout:layout];
+        UICollectionView *scoreStatusShowView = [[UICollectionView alloc] initWithFrame:CGRectMake(kScreenWidht * 0.05, kScreenRatio * 10, CGRectGetWidth(self.frame) - kScreenWidht * 0.1, CGRectGetHeight(self.frame) - kScreenRatio * 10) collectionViewLayout:layout];
         scoreStatusShowView.backgroundColor = [UIColor whiteColor];
         scoreStatusShowView.delegate = self;
-        scoreStatusShowView.dataSource = self;
+//        scoreStatusShowView.dataSource = self;
         self.scoreStatusShowView = scoreStatusShowView;
         
         scoreStatusShowView.layer.borderColor = [UIColor colorWithRed:0.23f green:0.72f blue:0.80f alpha:1.00f].CGColor;
@@ -57,43 +55,43 @@
     return _scoreStatusShowView;
 }
 
-#pragma mark --UICollectionViewDataSource
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 20;
-}
-
-- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    
-    WXYScoreStatusCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
-    cell.layer.borderColor = [UIColor colorWithRed:0.23f green:0.72f blue:0.80f alpha:1.00f].CGColor;
-    cell.layer.borderWidth = 0.3f;
-
-    if (indexPath.row == 0) {
-        
-        cell.backgroundColor = [UIColor colorWithRed:0.74f green:0.77f blue:0.63f alpha:1.00f];
-        cell.scoreLabel.text = @"1234";
-        
-    } else if (indexPath.row % 5 == 0 && indexPath.row > 0) {
-        
-        cell.backgroundColor = [UIColor colorWithRed:0.74f green:0.91f blue:0.95f alpha:1.00f];
-        cell.scoreLabel.text = @"234";
-
-    } else if (indexPath.row < 5 && indexPath.row > 0) {
-        
-        cell.backgroundColor = [UIColor colorWithRed:0.98f green:0.86f blue:0.67f alpha:1.00f];
-        cell.scoreLabel.text = @"14";
-        
-    } else {
-        cell.scoreLabel.textColor = [UIColor colorWithRed:0.98f green:0.86f blue:0.67f alpha:1.00f];
-        cell.scoreLabel.text = @"34";
-    }
-    return cell;
-}
-
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
-}
+//#pragma mark --UICollectionViewDataSource
+//
+//- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+//    return 20;
+//}
+//
+//- (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    WXYScoreStatusCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+//    cell.layer.borderColor = [UIColor colorWithRed:0.23f green:0.72f blue:0.80f alpha:1.00f].CGColor;
+//    cell.layer.borderWidth = 0.3f;
+//
+//    if (indexPath.row == 0) {
+//        
+//        cell.backgroundColor = [UIColor colorWithRed:0.74f green:0.77f blue:0.63f alpha:1.00f];
+//        cell.scoreLabel.text = @"1234";
+//        
+//    } else if (indexPath.row % 5 == 0 && indexPath.row > 0) {
+//        
+//        cell.backgroundColor = [UIColor colorWithRed:0.74f green:0.91f blue:0.95f alpha:1.00f];
+//        cell.scoreLabel.text = @"234";
+//
+//    } else if (indexPath.row < 5 && indexPath.row > 0) {
+//        
+//        cell.backgroundColor = [UIColor colorWithRed:0.98f green:0.86f blue:0.67f alpha:1.00f];
+//        cell.scoreLabel.text = @"14";
+//        
+//    } else {
+//        cell.scoreLabel.textColor = [UIColor colorWithRed:0.98f green:0.86f blue:0.67f alpha:1.00f];
+//        cell.scoreLabel.text = @"34";
+//    }
+//    return cell;
+//}
+//
+//- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+//    return 1;
+//}
 
 #pragma mark -- UICollectionViewDelegateFlowLayout
 /** 每个cell的尺寸*/

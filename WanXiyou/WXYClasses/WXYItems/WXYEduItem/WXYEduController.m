@@ -11,6 +11,7 @@
 @interface WXYEduController ()
 
 @property(nonatomic, strong) NSMutableArray *dataSource;
+@property(nonatomic, strong) WXYEduPresenters *presenter;
 
 @end
 
@@ -26,6 +27,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    [self getModel];
     
     NSMutableArray *titles = [NSMutableArray arrayWithCapacity:0];
     WXYSheduleController *sheduleController = [[WXYSheduleController alloc] init];
@@ -50,5 +52,16 @@
     [self addChildViewController:segmentVC];
     [self.view addSubview:segmentVC.view];
 }
+
+- (void)getModel {
+    
+    __block NSDictionary *lessonDict = [NSDictionary dictionary];
+    self.presenter = [[WXYEduPresenters alloc] init];
+    [self.presenter requestLessonList:^(NSDictionary *result) {
+        lessonDict = result;
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"getModel" object:nil userInfo:result];
+    }];
+}
+
 
 @end

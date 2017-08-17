@@ -8,25 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^Callback)(NSDictionary *result);
-
-@interface WXYLessonListModel : NSObject
-
-@property(nonatomic, strong) NSString *code;
-@property(nonatomic, strong) NSString *error;
-@property(nonatomic, strong) NSArray *data;
-
-@end
+typedef void(^Requestback)(NSDictionary *result);
 
 @interface WXYLessonModel : NSObject
 
-@property(nonatomic, strong) WXYLessonListModel *listModel;
 @property(nonatomic, strong) NSString *empty;
-@property(nonatomic, strong) NSString *lesson;
 @property(nonatomic, strong) NSString *lesson_name;
 @property(nonatomic, strong) NSString *lesson_teacher;
 @property(nonatomic, strong) NSString *lesson_time;
 
-- (void)getResultback:(Callback)callback;
+- (void)getResultback:(Requestback)callback;
 
 @end

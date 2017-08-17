@@ -10,4 +10,8 @@
 
 @interface WXYScoreDetailView : UIView
 
+@property(nonatomic, assign) NSUInteger indexPath;
+
+- (instancetype)initWithFrame:(CGRect)frame indexPath:(NSUInteger)indexPath;
+
 @end

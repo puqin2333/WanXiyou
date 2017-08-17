@@ -35,15 +35,15 @@
         scoreListTableView.dataSource = self;
         scoreListTableView.layer.cornerRadius = 10.0f;
         scoreListTableView.layer.masksToBounds = YES;
-//        scoreListTableView.scrollEnabled = NO;
         [scoreListTableView registerClass:[WXYScoreCell class] forCellReuseIdentifier:@"scoreCell"];
         self.scoreListTableView = scoreListTableView;
         self.scoreListTableView.tableFooterView = [UIView new];
     }
     return _scoreListTableView;
 }
-
+//  选中处理：首先将其他 cell 隐藏，取出 tableview 的可见 cell，将其他cell的透明度都设为0
 - (void)tableView:(UITableView *)tableView selectCellAtIndexPath:(NSIndexPath *)indexPath {
+
     WXYScoreCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [tableView bringSubviewToFront:cell];
     for (UIView *subCell in tableView.visibleCells) {
@@ -63,11 +63,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    WXYScoreCell *cell = [tableView dequeueReusableCellWithIdentifier:@"scoreCell"];
+    WXYScoreCell *cell = [WXYScoreCell cellWithTableView:tableView indexPath:indexPath];
     cell.backgroundColor = self.colorArray[indexPath.row];
     cell.termLabel.text = _dataSource[indexPath.row];
-//    [cell configCellWithArticleModel:self.dataSource[indexPath.row]];
     [cell addSelectBlock:^{
+
         [self tableView:tableView selectCellAtIndexPath:indexPath];
     }];
     [cell addDeselectBlock:^() {
@@ -87,8 +87,14 @@
 #pragma mark --UITableViewDelegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self tableView:tableView selectCellAtIndexPath:indexPath];
+    
+    WXYEduPresenters* presenter = [[WXYEduPresenters alloc] init];
+    [presenter requestScore:^(id result) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"getScore" object:nil userInfo:result];
+    }];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
